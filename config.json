@@ -1,9 +1,9 @@
 {
-  "name": "Duck DNS",
+  "name": "Let's Encrypt DNS",
   "version": "1.5",
   "slug": "duckdns",
-  "description": "Free Dynamic DNS (DynDNS or DDNS) service with Let's Encrypt support",
-  "url": "https://www.home-assistant.io/addons/duckdns/",
+  "description": "Let's Encrypt DNS",
+  "url": "https://github.com/smileyhogue/Let-s-Encrypt-DNS",
   "startup": "services",
   "boot": "auto",
   "map": ["ssl:rw"],
@@ -13,9 +13,6 @@
       "certfile": "fullchain.pem",
       "keyfile": "privkey.pem"
     },
-    "token": null,
-    "domains": [null],
-    "seconds": 300
   },
   "schema": {
     "lets_encrypt": {
@@ -23,9 +20,7 @@
       "certfile": "str",
       "keyfile": "str"
     },
-    "token": "str",
     "domains": ["str"],
-    "seconds": "int"
   },
   "image": "homeassistant/{arch}-addon-duckdns"
 }
