@@ -6,9 +6,6 @@
   "url": "https://home-assistant.io/addons/lets_encrypt/",
   "startup": "once",
   "boot": "manual",
-  "ports": {
-    "80/tcp": 80
-   },
   "map": ["ssl:rw"],
   "options": {
     "email": null,
